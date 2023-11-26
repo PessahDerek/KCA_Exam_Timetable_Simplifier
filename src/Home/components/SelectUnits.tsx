@@ -25,7 +25,7 @@ export default function SelectUnits(){
             <p>Pick your units</p>
             <input placeholder={"Search"} className={""} type={"text"} value={value} onChange={e=>setValue(e.target.value)} />
             <div className={"w-full grid gap-2"}>
-                {value.length >= 2 && units.filter(unit => unit.includes(value.toString())).map((unit, i) =>
+                {value.length >= 2 && units.filter(unit => unit.toLowerCase().includes(value.toLowerCase())).map((unit, i) =>
                     <button onClick={()=>addUnit(unit)} className={"h-[3em] active:bg-blue-300 hover:bg-blue-50 cursor-pointer"} key={i}>
                     <p className={"w-full truncate pointer-events-none"}>{unit}</p>
                 </button>)}
