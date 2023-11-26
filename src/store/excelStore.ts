@@ -1,8 +1,6 @@
 import {create} from "zustand";
 import React from "react";
 import readXlsxFile, {Row} from "read-excel-file";
-import {Input} from "postcss";
-import {number} from "prop-types";
 
 interface tableObj {
     date: string,
@@ -28,7 +26,7 @@ interface excelStoreObj {
 
 
 function correctDate(serial: number) {
-    const date = new Date((serial - 1) * 86400000 + Date.UTC(1900, 0, 1));
+    const date = new Date((serial - 2) * 86400000 + Date.UTC(1900, 0, 1));
 
     // Array of month names (adjust if needed for your language/locale)
     const months = [
