@@ -59,6 +59,7 @@ export default function ShowTT(){
                 This is an open-source simple project, just to simplify reading an exam timetable. Nonetheless, there is a group of people who would love
                 to take this opportunity to attack your device, hopefully you are on the right link🌚 and what you are about to download is just an image of the timetable and nothing more😂
                 Pessimistic? Maybe🤷🏽‍♂️ but just be careful😌
+
             </p>
             <span className={"flex flex-wrap gap-2"}>
                 <button onClick={downloadTable} className={"w-max h-[3em] grid gap-2 grid-flow-col bg-biscay-600 text-white pl-5 pr-5 "}>
