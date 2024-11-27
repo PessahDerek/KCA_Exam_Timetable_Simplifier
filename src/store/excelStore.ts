@@ -96,7 +96,7 @@ const excelStore = create<excelStoreObj>((set, get) => ({
                     // @ts-ignore
                     hold["unit"] = row[get().importantKeys.findIndex(p => p.includes("name"))]
                     // @ts-ignore
-                    hold["venue"] = row[get().importantKeys.findIndex(p => p.includes("venue"))]
+                    hold["venue"] = row[get().importantKeys.findIndex(p => p.includes("venue") || p.includes("room"))]
                 }
             }
             table.push(hold)
